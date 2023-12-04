@@ -1,0 +1,240 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Zen Dots";
+    background-color: #000;
+}
+
+/* Estilos para el encabezado */
+.header {
+    text-align: center;
+    border-bottom: 1px solid #14E210; /* Ancho y color del borde inferior */
+}
+
+.logo {
+    float: left;
+    height: 6rem;
+}
+
+.navegacion {
+    display: flexbox;
+    padding: 1.5rem ;
+   
+}
+
+.lista {    display: flex;
+    flex-direction: row;
+    justify-content: space-around;}
+
+.boton {
+    flex-grow: 1; 
+    width: calc(25% - 2rem); /* Divide el ancho en 4 partes iguales y ajusta los márgenes */
+    background: radial-gradient(50% 50% at 50% 50%, #10FF0B 0%, rgba(20, 226, 16, 0.00) 100%);
+    display: inline;
+    padding: 1.5rem;
+    margin-left: 6rem;
+}
+
+.boton:hover {
+    border-bottom: 2px solid #14E210;
+}
+
+.letrab {
+    color: #011601;
+    text-align: center;
+    font-family: Zen Dots;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Estilos para el cuerpo de la página */
+.indexbody {
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100vh; /* Utiliza el 100% de la altura de la ventana */
+}
+
+.hidden {
+    display: none;
+}
+.indexcont {
+    width: 70%;
+    height: 60%; /* Ajusta la altura según tus preferencias */
+    border: 2px solid #14E210;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+}
+.indexcont1 {
+    width: 40%;
+    height: 60%; /* Ajusta la altura según tus preferencias */
+    border: 2px solid #14E210;
+    text-align: center;
+    position: relative;
+    margin: 2rem;
+}
+.indextext{
+    color: #14E210;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 2rem;
+
+}
+
+.indextext1{
+    color: #14E210;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+}
+.indextext2{
+    color: #14E210;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 3.5rem;
+
+}
+
+.img4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.img3 {
+    height: 100%;
+    object-fit: cover;
+}
+
+.img5{
+position: absolute;
+bottom: 0;
+left: 50%; /* Coloca la imagen en el centro horizontalmente */
+transform: translateX(-50%); /* Centra la imagen horizontalmente */
+height: 11rem;
+
+}
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #14E210 ;
+}
+
+.textfooter{
+    color: #14E210;
+    text-align: center;
+    
+}
+
+.contacto{position: relative;
+    height: 2rem;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.abrir-menu 
+{display: none;}
+
+.cerrar-menu {display: none;}
+
+@media screen and (max-width: 750px) {
+    .abrir-menu {display: block;
+        border: 0;
+    cursor: pointer;
+background-color: #000;
+border: 2px solid #14E210;
+float: right;
+margin-right: 5%;
+padding: 1rem;
+font-size: 1rem;
+font-family: "Zen Dots" ;
+color: #14E210;
+margin-top: 1rem;
+
+}
+    .cerrar-menu {display: block;
+    border: 0;
+cursor: pointer;
+font-family: "Zen Dots" ;
+color: #14E210;
+background-color: #000;
+font-size: 0.80rem;
+} 
+
+
+
+
+
+.header {padding-bottom: 6rem;}
+    
+    .navegacion {opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        padding: 2rem;
+    }
+    .navegacion.visible {opacity: 1;
+        visibility: visible;
+    align-items: end;
+    z-index: 3;}
+
+
+    .lista {flex-direction: column;
+    align-items: end;
+    z-index: 3;}
+
+
+    
+    .boton {
+       
+        width: 50%; /* Divide el ancho en 4 partes iguales y ajusta los márgenes */
+        background: #14E210;
+        margin-left: 4rem;
+        padding: 0%;
+        z-index: 3;
+    }
+    
+    
+    .letrab {
+        color: #011601;
+        text-align: center;
+        font-family: Zen Dots;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    
+    .indexbody {
+            display: flex;
+            width: 100%;
+            justify-content: center; /* Centra horizontalmente el contenido */
+            align-items: center; /* Centra verticalmente el contenido */
+            height: 100vh; /* Utiliza el 100% de la altura de la ventana */
+            flex-direction: column; 
+            z-index: 1;
+    }
+
+    .indexcont1 {
+        width: 85%;
+        z-index: 2;
+
+    }
+    .indextext {position: relative;
+    font-size: 1rem;}
+    .img3 {  width: 100%;
+        height: auto;}
+}
